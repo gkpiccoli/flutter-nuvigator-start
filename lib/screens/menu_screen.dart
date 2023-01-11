@@ -49,13 +49,9 @@ class MenuScreen extends StatelessWidget {
                   action: (() => Navigator.pushNamed(context, 'payment'))),
               Divider(),
               OrgsMenuCard(
-                text: 'Sair',
-                icon: Icons.logout,
-                action: () => Navigator.pushAndRemoveUntil(
-                    context,
-                    MaterialPageRoute(builder: (context) => LoginScreen()),
-                    (route) => false),
-              ),
+                  text: 'Sair',
+                  icon: Icons.logout,
+                  action: (() => Navigator.pushNamed(context, 'login'))),
               SizedBox(height: 30),
             ],
           ),
