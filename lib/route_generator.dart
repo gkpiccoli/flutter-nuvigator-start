@@ -33,7 +33,21 @@ class RouteGenerator {
           ),
         );
     }
+  }
 
-    return _erroRoute();
+  static Route<dynamic> _errorRoute() {
+    return MaterialPageRoute(
+      builder: (_) {
+        return Scaffold(
+          appBar: AppBar(
+            backgroundColor: Colors.green,
+            title: Text('Error'),
+          ),
+          body: Center(
+            child: Text('Error - No route'),
+          ),
+        );
+      },
+    );
   }
 }
