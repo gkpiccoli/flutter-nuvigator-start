@@ -34,11 +34,12 @@ class RouteGenerator {
         return _errorRoute();
 
       case 'package-details':
-        if (args is Package) {
+        if (args is Map) {
           return MaterialPageRoute(
             builder: ((context) => PackageDetailsScreen(
                   package: args["package"],
-                  producer: args["producer"],
+                  producer: args['''
+producer'''],
                 )),
           );
         }
