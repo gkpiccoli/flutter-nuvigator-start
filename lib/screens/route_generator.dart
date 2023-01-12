@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:proj/models/package_model.dart';
 import 'package:proj/models/producer_model.dart';
 import 'package:proj/screens/favorites_screen.dart';
 import 'package:proj/screens/home_screen.dart';
 import 'package:proj/screens/login_screen.dart';
+import 'package:proj/screens/package_details_screen.dart';
 import 'package:proj/screens/payment_screen.dart';
 import 'package:proj/screens/producer_details_screen.dart';
 import 'package:proj/screens/profile_screen.dart';
@@ -25,8 +27,21 @@ class RouteGenerator {
       case 'payment':
         return MaterialPageRoute(builder: (_) => PaymentScreen());
       case 'producer-details':
-        if (args is Producer) {}
+        if (args is Producer) {
+          return MaterialPageRoute(
+              builder: ((context) => ProducerDetailsScreen(producer: args)));
+        }
+        return _errorRoute();
 
+      case 'package-details':
+        if (args is Package) {
+          return MaterialPageRoute(
+            builder: ((context) => PackageDetailsScreen(
+                  package: args["package"],
+                  producer: args["producer"],
+                )),
+          );
+        }
         return MaterialPageRoute(
           builder: (_) => ProducerDetailsScreen(
             producer: args,
