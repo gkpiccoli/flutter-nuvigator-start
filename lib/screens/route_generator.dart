@@ -38,8 +38,7 @@ class RouteGenerator {
           return MaterialPageRoute(
             builder: ((context) => PackageDetailsScreen(
                   package: args["package"],
-                  producer: args['''
-producer'''],
+                  producer: args["producer"],
                 )),
           );
         }
