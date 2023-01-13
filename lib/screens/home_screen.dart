@@ -12,8 +12,6 @@ import 'package:proj/models/producer_model.dart';
 import 'package:proj/repository/data.dart';
 
 class HomeScreen extends StatefulWidget {
-  HomeScreen(Future<Object> Function(dynamic parameters) param0);
-
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
