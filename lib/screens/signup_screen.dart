@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proj/core/app_colors.dart';
 import 'package:proj/core/app_images.dart';
-import 'login_screen.dart';
 
 class SignupScreen extends StatelessWidget {
   @override
@@ -15,7 +14,6 @@ class SignupScreen extends StatelessWidget {
               AppImages.logo_login,
               fit: BoxFit.fitWidth,
               width: double.maxFinite,
-              // height: 180,
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
