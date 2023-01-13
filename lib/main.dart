@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:proj/screens/route_generator.dart';
+import 'package:nuvigator/next.dart';
+import 'package:proj/screens/home_screen.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -13,7 +15,8 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: 'Montserrat',
         ),
-        initialRoute: 'home',
-        onGenerateRoute: RouteGenerator.generateRoute);
+        home: Nuvigator.routes(initialRoute: 'home', routes: [
+          NuRouteBuilder(path: 'home', builder: (_, __, ___) => HomeScreen()),
+        ]));
   }
 }
