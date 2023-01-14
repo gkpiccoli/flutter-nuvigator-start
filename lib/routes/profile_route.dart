@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:nuvigator/next.dart';
 
-import 'package:proj/screens/payment_screen.dart';
+import '../screens/profile_screen.dart';
 
-class PaymentDetailsRoute extends NuRoute {
+class ProfileRoute extends NuRoute {
   @override
   Widget build(BuildContext context, NuRouteSettings<Object> settings) {
-    return PaymentScreen();
+    return ProfileScreen();
   }
 
   @override
-  String get path => 'payment';
+  String get path => 'profile';
 
   @override
   ScreenType get screenType => materialScreenType;

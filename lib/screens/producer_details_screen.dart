@@ -8,7 +8,7 @@ import 'package:proj/models/producer_model.dart';
 
 class ProducerDetailsScreen extends StatelessWidget {
   final Producer producer;
-  ProducerDetailsScreen({@required this.producer});
+  ProducerDetailsScreen({@required this.producer, Future<Object> Function(dynamic parameters) onPackageDetailsClick});
 
   @override
   Widget build(BuildContext context) {
