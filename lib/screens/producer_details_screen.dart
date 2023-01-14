@@ -95,11 +95,9 @@ class ProducerDetailsScreen extends StatelessWidget {
     List<Widget> children = [];
     for (final package in packages) {
       final pack = Package.fromJson(package);
-      final nuvigator = Nuvigator.of(context);
-
+      
       children.add(InkWell(
-        onTap: (() => nuvigator.open('package-details',
-            parameters: {"package": pack, "producer": producer})),
+        onTap: (() => onPackageDetails({"package": pack, "producer": producer})),
         child: OrgsPackagesCard(
           title: pack.title,
           price: pack.price,

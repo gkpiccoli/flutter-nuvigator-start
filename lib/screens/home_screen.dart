@@ -12,7 +12,9 @@ import 'package:proj/models/producer_model.dart';
 import 'package:proj/repository/data.dart';
 
 class HomeScreen extends StatefulWidget {
-  HomeScreen(Future<Object> Function(dynamic parameters) param0, {Future<Object> Function(dynamic parameters) onProducerSignupClick});
+  HomeScreen(Future<Object> Function(dynamic parameters) param0,
+      {Future<Object> Function(dynamic parameters) onProducerSignupClick, this.onProducerDetailsClick});
+  final onProducerDetailsClick;
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -143,12 +145,7 @@ class _HomeScreenState extends State<HomeScreen> {
       final prod = Producer.fromJson(producers[producer]);
 
       children.add(OrgsStoresCard(
-        action: () => nuvigator.open(
-          'producer-details',
-          parameters: {
-            'producer': prod,
-          },
-        ),
+        action: () => widget.onProducerDetailsClick({"producer": prod}),
         img: prod.logo,
         distance: prod.distance,
         title: prod.name,

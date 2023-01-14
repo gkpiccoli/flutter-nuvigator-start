@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nuvigator/next.dart';
+
 import 'package:proj/components/orgs_drawer.dart';
 import 'package:proj/components/orgs_stores_card.dart';
 import 'package:proj/core/app_colors.dart';
