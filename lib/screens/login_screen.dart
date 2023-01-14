@@ -49,7 +49,7 @@ class LoginScreen extends StatelessWidget {
               child: ConstrainedBox(
                 constraints: BoxConstraints.tightFor(width: double.infinity),
                 child: ElevatedButton(
-                  onPressed: (() => nuvigator.open('home')),
+                  onPressed: (() => onHomeClick('home')),
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.white,
                     backgroundColor: AppColors.green, // foreground
@@ -65,7 +65,7 @@ class LoginScreen extends StatelessWidget {
               ),
               child: GestureDetector(
                 onTap: () async {
-                  nuvigator.open('sign-up');
+                  onSingUpClick('sign-up');
                 },
                 child: Container(
                   width: double.maxFinite,
