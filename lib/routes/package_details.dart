@@ -1,6 +1,7 @@
-import 'package:flutter/src/widgets/framework.dart';
+
+import 'package:flutter/material.dart';
 import 'package:nuvigator/next.dart';
-import 'package:proj/screens/home_screen.dart';
+
 import 'package:proj/screens/package_details_screen.dart';
 
 class PackageDetailsRoute extends NuRoute {
