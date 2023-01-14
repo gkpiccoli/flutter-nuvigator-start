@@ -6,7 +6,7 @@ class LoginRoute extends NuRoute {
   @override
   Widget build(BuildContext context, NuRouteSettings<Object> settings) {
     return LoginScreen(
-        onProducerSignupClick: () => nuvigator.open('sign-up'),
+        onSignupClick: () => nuvigator.open('sign-up'),
         onHomeClick: () => nuvigator.open('home'));
   }
 
