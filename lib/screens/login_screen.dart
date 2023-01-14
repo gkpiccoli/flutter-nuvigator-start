@@ -4,9 +4,15 @@ import 'package:proj/core/app_colors.dart';
 import 'package:proj/core/app_images.dart';
 
 class LoginScreen extends StatelessWidget {
+
+    final onSingUpClick;
+    final onHomeClick;
+  const LoginScreen({Key key, this.onSingUpClick, this.onHomeClick}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     final nuvigator = Nuvigator.of(context);
+  
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
