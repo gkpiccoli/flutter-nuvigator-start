@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:nuvigator/next.dart';
 
-import '../screens/signup_screen.dart';
 
-class SignUpRoute extends NuRoute {
+import '../screens/favorites_screen.dart';
+
+class FavoritesRoute extends NuRoute {
   @override
   Widget build(BuildContext context, NuRouteSettings<Object> settings) {
-    return SignupScreen(
-      onLoginClick: () => nuvigator.open('login'),
+    return FavoritesScreen(
+      ],
     );
   }
 
   @override
-  String get path => 'sign-up';
+  String get path => 'favorites';
 
   @override
   ScreenType get screenType => materialScreenType;
