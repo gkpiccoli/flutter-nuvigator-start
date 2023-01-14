@@ -1,4 +1,4 @@
-![Thumbnail GitHub](thumb.png)
+
 
 # E-commerce Orgs
 
@@ -19,19 +19,6 @@ O app lista cestas, produtores e itens das cestas com imagem, título, descriç�
 - `nuvigator` nas branches a partir da aula_2 utilizamos uma biblioteca chamada [nuvigator](https://github.com/nubank/nuvigator) que nos possibilita manipular o fluxos das rotas, parâmetros, navegação aninhada e afins.
  
 ## 📁 Acesso ao projeto
-
-O acesso ao projeto está separado da seguinte forma:
-```
-start
-├── aula_1
-├── aula_2
-├── aula_3
-├── start_nested
-├── aula_4
-└── main
-```
-
-A branch [start](https://github.com/Leomhl/flutter-nuvigator/tree/start) é o ponto de partida do repositório, é partindo dela que desenvolveremos a aula_1. Por sua vez, a aula_2 é uma continuação da aula_1 e assim vai sucessivamente. A branch main é a final, nela você encontra o código final criado no curso até a aula_4.
 
 Você pode [baixar](https://github.com/Leomhl/flutter-nuvigator/archive/refs/heads/start.zip) o zip com o código inicial do projeto.
 
