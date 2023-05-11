@@ -18,9 +18,7 @@ O app lista cestas, produtores e itens das cestas com imagem, título, descriç�
 - `centralização de imagens`: todas as imagens utilizadas no app vêm de um arquivo chamado app_images que aumenta o poder de personalização sem grande impacto na lógica do código.
 - `nuvigator` nas branches a partir da aula_2 utilizamos uma biblioteca chamada [nuvigator](https://github.com/nubank/nuvigator) que nos possibilita manipular o fluxos das rotas, parâmetros, navegação aninhada e afins.
  
-## 📁 Acesso ao projeto
 
-Você pode [baixar](https://github.com/Leomhl/flutter-nuvigator/archive/refs/heads/start.zip) o zip com o código inicial do projeto.
 
 ## 🛠️ Abrir e rodar o projeto
 
